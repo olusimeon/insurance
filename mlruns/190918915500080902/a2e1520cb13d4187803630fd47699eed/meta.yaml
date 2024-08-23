@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/190918915500080902/a2e1520cb13d4187803630fd47699eed/artifacts
+deleted_time: 1724340549392
+end_time: 1724340500163
+entry_point_name: ''
+experiment_id: '190918915500080902'
+lifecycle_stage: deleted
+run_id: a2e1520cb13d4187803630fd47699eed
+run_name: Random forest
+run_uuid: a2e1520cb13d4187803630fd47699eed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724340500049
+status: 4
+tags: []
+user_id: Simeon

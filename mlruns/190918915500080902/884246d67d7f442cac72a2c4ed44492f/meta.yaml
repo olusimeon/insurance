@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/190918915500080902/884246d67d7f442cac72a2c4ed44492f/artifacts
+end_time: 1724340555525
+entry_point_name: ''
+experiment_id: '190918915500080902'
+lifecycle_stage: active
+run_id: 884246d67d7f442cac72a2c4ed44492f
+run_name: Decision tree
+run_uuid: 884246d67d7f442cac72a2c4ed44492f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724340549226
+status: 3
+tags: []
+user_id: Simeon

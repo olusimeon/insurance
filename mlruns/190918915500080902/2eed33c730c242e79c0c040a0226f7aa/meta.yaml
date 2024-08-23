@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/190918915500080902/2eed33c730c242e79c0c040a0226f7aa/artifacts
+end_time: 1724340549067
+entry_point_name: ''
+experiment_id: '190918915500080902'
+lifecycle_stage: active
+run_id: 2eed33c730c242e79c0c040a0226f7aa
+run_name: Random forest
+run_uuid: 2eed33c730c242e79c0c040a0226f7aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724340534361
+status: 3
+tags: []
+user_id: Simeon
