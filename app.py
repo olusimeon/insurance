@@ -6,7 +6,7 @@ import joblib
 app = Flask(__name__)
 
 # Path to the local model file
-model_file_path = r"C:\Users\Simeon\Documents\Deployment\machinelearning\insurance\mlartifacts\190918915500080902\884246d67d7f442cac72a2c4ed44492f\artifacts\model\model.pkl"
+model_file_path = "part to your mlartifacts model.pkl"
 
 # Load the model using joblib
 model = joblib.load(model_file_path)
