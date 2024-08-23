@@ -20,7 +20,7 @@ This application predicts whether a customer will make an insurance claim based 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/insurance-claim-prediction-app.git
+   git clone https://github.com/yourusername/insurance-claim.git
    cd insurance-claim-prediction-app
 
 ## Create a virtual environment:
