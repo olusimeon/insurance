@@ -23,31 +23,36 @@ This application predicts whether a customer will make an insurance claim based 
    git clone https://github.com/yourusername/insurance-claim.git
    cd insurance-claim-prediction-app
 
-2. **Create a virtual environment:**
+   2. **Create a virtual environment:**
 
 ``` bash
 python -m venv newvenv
-source newvenv/bin/activate  # On Windows use `newvenv\Scripts\activate`
+source newvenv/bin/activate  # On Windows use `newvenv\Scripts\activate
+```
 
 3. **Install dependencies:**
 
 ```bash
 pip install -r requirements.txt
+```
 
 4. **Set up MLflow:**
 ### Ensure that MLflow is running on your machine you can specify the port you want mlflow to run on (optional)
 ```bash
 mlflow ui # to start mlflow ui or
 mlflow ui --port 8080 # to specify the port
+```
 
 ### Configure the tracking URI in your Flask app or environment variables:
 ```bash
-mlflow.set_tracking_uri("http://127.0.0.1:8080")
+mlflow.set_tracking_uri("http://127.0.0.1:8080") ```
 
-5. ** Run the Flask app:**
+5. **Run the Flask app:**
 ```bash
 python app.py
 The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.
+
+
 
 
 
