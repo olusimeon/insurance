@@ -37,12 +37,12 @@ pip install -r requirements.txt
 ```
 
 4. **Set up MLflow:**
-### Ensure that MLflow is running on your machine you can specify the port you want mlflow to run on (optional)
+   Ensure that MLflow is running on your machine you can specify the port you want mlflow to run on (optional)
 ```bash
 mlflow ui # to start mlflow ui or
 mlflow ui --port 8080 # to specify the port
 ```
-### Configure the tracking URI in your Flask app or environment variables:
+Configure the tracking URI in your Flask app or environment variables:
 ```bash
 mlflow.set_tracking_uri("http://127.0.0.1:8080")
 ```
@@ -53,12 +53,12 @@ python app.py
 ```
 ## The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.
 
-## Usage
-## Access the Web Interface:
-## . Navigate to http://127.0.0.1:5000 in your web browser.
-## . Upload a CSV File:
-## . Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
-## . Upload the file via the provided form on the web interface.
+**Usage**
+Access the Web Interface:
+. Navigate to http://127.0.0.1:5000 in your web browser.
+. Upload a CSV File:
+. Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
+. Upload the file via the provided form on the web interface.
 
 ## View Predictions:
 After uploading the file, the app will return predictions indicating whether each customer is likely to make a claim.
@@ -69,27 +69,23 @@ Model Deployment: The model can be loaded directly from the MLflow tracking serv
 
 ### Project Structure
 ```bash
-insurance-claim-/
+insurance-claim-prediction-app/
 │
 ├── app.py                      # Main Flask application
 ├── templates/
 │   └── temp.html               # HTML template for file upload
-├── model/                      # Directory for storing model files
-│   └── model.pkl               # Serialized model file (if using locally)
+├── mlartifacts/                # Directory for storing MLflow artifacts
+│   └── 1909189155/            # Directory for a specific model run
+│       ├── model.pkl           # Serialized model file (if using locally)
 ├── newvenv/                    # Virtual environment (optional)
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This README file
 ```
 
-## Contributing
+**Contributing**
 We welcome contributions to enhance the functionality and performance of the app. Please follow these steps:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature-name).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/your-feature-name).
-Create a new Pull Request.
-Contact
+**Contact**
 For questions, suggestions, or feedback, please open an issue or contact the project maintainers at olusimeon4@gmail.com.
 
 
