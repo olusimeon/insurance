@@ -43,7 +43,7 @@ pip install -r requirements.txt
 mlflow ui # to start mlflow ui or
 mlflow ui --port 8080 # to specify the port
 ```
-Configure the tracking URI in your Flask app or environment variables:
+   Configure the tracking URI in your Flask app or environment variables:
 ```bash
 mlflow.set_tracking_uri("http://127.0.0.1:8080")
 ```
@@ -56,10 +56,10 @@ python app.py
 
 **Usage**
 Access the Web Interface:
-. Navigate to http://127.0.0.1:5000 in your web browser.
-. Upload a CSV File:
-. Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
-. Upload the file via the provided form on the web interface.
+Navigate to http://127.0.0.1:5000 in your web browser.
+Upload a CSV File:
+Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
+Upload the file via the provided form on the web interface.
 
 ## View Predictions:
 After uploading the file, the app will return predictions indicating whether each customer is likely to make a claim.
