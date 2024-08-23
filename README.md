@@ -51,7 +51,7 @@ mlflow.set_tracking_uri("http://127.0.0.1:8080")
 ```bash
 python app.py
 ```
-## The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.
+**The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.**
 
 **Usage**
 Access the Web Interface:
