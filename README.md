@@ -54,19 +54,19 @@ python app.py
 ```
 **The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.**
 
-**Usage**
-Access the Web Interface:
-Navigate to http://127.0.0.1:5000 in your web browser.
-Upload a CSV File:
-Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
-Upload the file via the provided form on the web interface.
+**Usage: **
+   - Access the Web Interface:
+   - Navigate to http://127.0.0.1:5000 in your web browser.
+   - Upload a CSV File:
+   - Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
+   - Upload the file via the provided form on the web interface.
 
 ## View Predictions:
 After uploading the file, the app will return predictions indicating whether each customer is likely to make a claim.
-Model Details
-Model Training: The model was trained using historical insurance claim data, with features including customer demographics, vehicle specifications, and other relevant factors.
-Model Logging with MLflow: During training, the model was logged using MLflow, capturing metrics, parameters, and artifacts.
-Model Deployment: The model can be loaded directly from the MLflow tracking server or from a local pickle file.
+ Model Details
+   - Model Training: The model was trained using historical insurance claim data, with features including customer demographics, vehicle specifications, and other relevant factors.
+   - Model Logging with MLflow: During training, the model was logged using MLflow,       capturing metrics, parameters, and artifacts.
+   - Model Deployment: The model can be loaded directly from the MLflow tracking server or from a local pickle file.
 
 ### Project Structure
 ```bash
