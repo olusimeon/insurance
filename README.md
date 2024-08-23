@@ -21,9 +21,9 @@ This application predicts whether a customer will make an insurance claim based 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/insurance-claim.git
-   cd insurance-claim-prediction-app
-
-   2. **Create a virtual environment:**
+   cd insurance-claim-prediction```
+   
+2. **Create a virtual environment:**
 
 ``` bash
 python -m venv newvenv
@@ -42,18 +42,55 @@ pip install -r requirements.txt
 mlflow ui # to start mlflow ui or
 mlflow ui --port 8080 # to specify the port
 ```
-
 ### Configure the tracking URI in your Flask app or environment variables:
 ```bash
-mlflow.set_tracking_uri("http://127.0.0.1:8080") ```
+mlflow.set_tracking_uri("http://127.0.0.1:8080")
+```
 
 5. **Run the Flask app:**
 ```bash
 python app.py
-The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.
+```
+## The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.
 
+## Usage
+## Access the Web Interface:
+## . Navigate to http://127.0.0.1:5000 in your web browser.
+## . Upload a CSV File:
+## . Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
+## . Upload the file via the provided form on the web interface.
 
+## View Predictions:
+After uploading the file, the app will return predictions indicating whether each customer is likely to make a claim.
+Model Details
+Model Training: The model was trained using historical insurance claim data, with features including customer demographics, vehicle specifications, and other relevant factors.
+Model Logging with MLflow: During training, the model was logged using MLflow, capturing metrics, parameters, and artifacts.
+Model Deployment: The model can be loaded directly from the MLflow tracking server or from a local pickle file.
 
+### Project Structure
+```bash
+insurance-claim-/
+│
+├── app.py                      # Main Flask application
+├── templates/
+│   └── temp.html               # HTML template for file upload
+├── model/                      # Directory for storing model files
+│   └── model.pkl               # Serialized model file (if using locally)
+├── newvenv/                    # Virtual environment (optional)
+├── requirements.txt            # Python dependencies
+└── README.md                   # This README file
+```
+
+## Contributing
+We welcome contributions to enhance the functionality and performance of the app. Please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature/your-feature-name).
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/your-feature-name).
+Create a new Pull Request.
+Contact
+For questions, suggestions, or feedback, please open an issue or contact the project maintainers at olusimeon4@gmail.com.
 
 
 
