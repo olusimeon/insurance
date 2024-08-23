@@ -19,10 +19,10 @@ This application predicts whether a customer will make an insurance claim based 
 ### Setup Instructions
 
 1. **Clone the repository:**
-   ```bash
+```bash
    git clone https://github.com/yourusername/insurance-claim.git
    cd insurance-claim-prediction
-   ```
+```
    
 2. **Create a virtual environment:**
 
@@ -52,7 +52,7 @@ mlflow.set_tracking_uri("http://127.0.0.1:8080")
 ```bash
 python app.py
 ```
-**The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.**
+- The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.**
 
 **Usage: **
    - Access the Web Interface:
