@@ -94,6 +94,11 @@ find ~ -name "bin" -type d | grep -E "venv|env|virtualenv"
 - python app.py 
 
 
+## Optional use git
+- git clone https://github.com/your-repo-url.git
+- cd your-repo-folder
+
+
 
 
 
