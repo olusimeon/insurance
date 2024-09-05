@@ -7,14 +7,16 @@ This application predicts whether a customer will make an insurance claim based 
 - **Predict Insurance Claims:** Upload customer and vehicle details in a CSV file to get predictions on insurance claims.
 - **Model Versioning with MLflow:** Models are logged, tracked, and managed using MLflow.
 - **Easy Deployment:** The app is designed to be deployed on local servers, with simple integration into cloud environments if needed.
+- **Deployed on AWS EC2**: The application is hosted on an AWS EC2 instance, providing scalability and cloud-based access. File has been updated on our to deploy to EC2.
 
 ## Installation
 
 ### Prerequisites
-- Python 3.7 or later
+- Python 3.11.7
 - pip for package manaegement
 - MLflow installed and configured
 - Flask installed
+- AWS Account: Required to store model artifacts,sagemaker notebook, deploy model and managing your application on AWS EC2.
 
 ### Setup Instructions
 
@@ -61,12 +63,23 @@ python app.py
    - Prepare a CSV file with the required customer and vehicle details. Check mlartifacts/columns.txt for required details.
    - Upload the file via the provided form on the web interface.
 
+6. **Deploy to AWS EC2**
+   - Steps to follow on how to deploy to ec2 is already provided on aws flask app.txt
+   - Ensure your EC2 instance is running and accessible 
+   - Set up security group to allow traffic on the required ports i.e 5050 as specified in the app.py file.
+
+7. **Accessing the Application**
+   - Visit your application URL or public IP address on the EC2 instance to interact with it. 
+   - For example, http://<your-ec2-public-ip>:5050.
+
 ## View Predictions:
 After uploading the file, the app will return predictions indicating whether each customer is likely to make a claim.
  Model Details
+   - Model Management: Ensure that MLflow is properly configured to save model artifats on s3 and accessible from your EC2 instance for managing and tracking models.
+   - Security: Implement appropriate security measures for your application, including using HTTPS for secure communication and securing access to your EC2 instance.
    - Model Training: The model was trained using historical insurance claim data, with features including customer demographics, vehicle specifications, and other relevant factors.
-   - Model Logging with MLflow: During training, the model was logged using MLflow,       capturing metrics, parameters, and artifacts.
-   - Model Deployment: The model can be loaded directly from the MLflow tracking server or from a local pickle file.
+   - Model Logging with MLflow: During training, the model was logged using MLflow, capturing metrics, parameters, and artifacts.
+   - Model Deployment: The model can be loaded directly from the MLflow tracking server, S3 bucket artifacts or from a local pickle file.
 
 ### Project Structure
 ```bash
