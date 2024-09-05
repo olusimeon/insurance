@@ -56,7 +56,7 @@ python app.py
 ```
 - The app will be accessible at http://127.0.0.1:5050 as specified in the app.py file.**
 
-**Usage: **
+**Usage:**
    - Access the Web Interface:
    - Navigate to http://127.0.0.1:5000 in your web browser.
    - Upload a CSV File:
@@ -64,7 +64,7 @@ python app.py
    - Upload the file via the provided form on the web interface.
 
 6. **Deploy to AWS EC2**
-   - Steps to follow on how to deploy to ec2 is already provided on aws flask app.txt
+   - Steps to follow on how to deploy to EC2 is already provided on aws flask app.txt
    - Ensure your EC2 instance is running and accessible 
    - Set up security group to allow traffic on the required ports i.e 5050 as specified in the app.py file.
 
@@ -74,7 +74,9 @@ python app.py
 
 ## View Predictions:
 After uploading the file, the app will return predictions indicating whether each customer is likely to make a claim.
- Model Details
+ 
+**Model Details**
+
    - Model Management: Ensure that MLflow is properly configured to save model artifats on s3 and accessible from your EC2 instance for managing and tracking models.
    - Security: Implement appropriate security measures for your application, including using HTTPS for secure communication and securing access to your EC2 instance.
    - Model Training: The model was trained using historical insurance claim data, with features including customer demographics, vehicle specifications, and other relevant factors.
@@ -97,10 +99,10 @@ insurance-claim-prediction-app/
 ```
 
 **Contributing**
-We welcome contributions to enhance the functionality and performance of the app. Please follow these steps:
+I welcome contributions to enhance the functionality and performance of the app. Please follow these steps:
 
 **Contact**
-For questions, suggestions, or feedback, please open an issue or contact the project maintainers at olusimeon4@gmail.com.
+For questions, suggestions, or feedback, please open an issue or contact on olusimeon4@gmail.com.
 
 
 
