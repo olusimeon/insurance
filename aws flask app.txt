@@ -1,0 +1,100 @@
+## follow this command after creating an ec2 instance to host mlflow server and deploy flask app
+
+--sudo apt update
+
+--sudo apt install python3-pip
+
+-- sudo apt install pipenv
+
+--sudo apt install virtualenv
+
+-- mkdir mlflow
+
+-- cd mlflow
+
+-- pipenv install mlflow
+
+-- pipenv install awscli
+
+-- pipenv install boto3
+
+-- pipenv shell
+
+
+## Then set aws credentials created with iam giving the right permissions
+-- aws configure
+
+
+#Finally start server 
+-- mlflow server -h 0.0.0.0 --default-artifact-root s3://insurance-claims-deploy/mlflowmodel/
+
+#open Public IPv4 DNS to the port 5000
+
+##tracking url
+-- http://ec2 -public-dns -1.amazonaws.com.com:5000/
+
+##note the ec2 public dns will change anytime you stop and start it to activate this 
+-- connect to the ec2 instance and connect to the server
+-- search for the virtualenv if any and activate virtualenv, to do this run the following command 
+
+## for venv environment
+-- ls ~/venv/
+
+## for virtualenvs
+-- ls ~/virtualenv/
+
+## to search for virtual environment bins folder.
+find ~ -name "bin" -type d | grep -E "venv|env|virtualenv"
+
+
+## once virtual env list is out activate the virtualenv
+-- source /home/ubuntu/.local/share/virtualenvs/vitual env name/bin/activate
+
+## start mllfow server with the mlfow tracking uri
+-- mlflow server -h 0.0.0.0 --default-artifact-root s3://insurance-claims-deploy/mlflowmodel/
+
+
+## to deploy flask app to ec2 using ssh 
+-- create a key pair on your ec2 instance 
+-- start the instance
+-- connect to instance using ssh 
+-- run 
+-- ssh -i "/path/to/your/key_pair.pem" user@ec2-public-dns
+
+## connect to ec2 instance using ssh
+-- ssh -i "C:\Users\xxx\xxx\xx\server.pem" ubuntu@ec2-44-201-43-146.compute-1.amazonaws.com
+
+### to copy project folder 
+-- scp -i "C:\Users\xxx\xx\key\xx.pem" -r "C:\Users\xx\xx\xx\xx" user@ec2-dns:/home/user/
+
+-- scp -i "C:\Users\xxx\xx\key\xx.pem" -r "C:\Users\xx\xx\xx\" ubuntu@ec2.compute-1.amazonaws.com:/home/ubuntu/
+
+
+## to confirm file is uploaded sucessfully 
+
+- ls 
+
+## open the folder you uploaded 
+- ls folder name 
+- cd folder name
+
+## activate virtual environment if not available 
+- sudo apt update
+- sudo apt install python version used to deploy model 
+- python -m venv myenv
+
+## activate virtual environment 
+- source myenvs/bin/activate 
+
+## install required packages 
+- pip install -r requiremtnstxt ## if you have one or 
+- pip install package name 
+
+## run program 
+- python app.py 
+
+
+
+
+
+

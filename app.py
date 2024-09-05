@@ -1,9 +1,12 @@
 from flask import Flask, request, render_template, jsonify
-import pickle
 import pandas as pd
 import joblib
+import mlflow.pyfunc
 
 app = Flask(__name__)
+
+# using Mlflow pyfunc to load model from s3.
+#model = mlflow.pyfunc.load_model('path to s3 file uri where model is stored /model')
 
 # Path to the local model file
 model_file_path = "part to your mlartifacts model.pkl"
@@ -72,3 +75,6 @@ def predict():
 # Run the Flask app
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5050, debug=True)
+
+    #to run on ec2 instance change host to accept requests from any  IP address and edit security inbound rules to allow traffic from port 5050 
+    #app.run(host='0.0.0.0', port=5050, debug=True)
