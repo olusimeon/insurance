@@ -1,13 +1,13 @@
 # Insurance Claim Prediction app
 
 ## Overview
-This application predicts whether a customer will make an insurance claim based on their profile and vehicle details. The app leverages machine learning models, logged and managed via MLflow, to ensure version control and easy deployment. The predictions are served through a Flask web application, which provides a simple user interface for file uploads and displays the prediction results.
+This application predicts whether a customer will make an insurance claim based on their profile and vehicle details. The app leverages machine learning models, logged and managed via MLflow, to ensure version control and easy deployment. The predictions are served through a Flask web application both on local machine and ec2 instance, which provides a simple user interface for file uploads and displays the prediction results. 
 
 ## Features
 - **Predict Insurance Claims:** Upload customer and vehicle details in a CSV file to get predictions on insurance claims.
 - **Model Versioning with MLflow:** Models are logged, tracked, and managed using MLflow.
 - **Easy Deployment:** The app is designed to be deployed on local servers, with simple integration into cloud environments if needed.
-- **Deployed on AWS EC2**: The application is hosted on an AWS EC2 instance, providing scalability and cloud-based access. File has been updated on our to deploy to EC2.
+- **Deployed on AWS EC2**: The application is hosted on an AWS EC2 instance, providing scalability and cloud-based access. File has been updated on our to deploy to EC2. AWS guide and notebook provided.
 
 ## Installation
 
