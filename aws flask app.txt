@@ -99,7 +99,6 @@ find ~ -name "bin" -type d | grep -E "venv|env|virtualenv"
 - cd your-repo-folder
 
 
-
-
-
-
+## Finally 
+# Gunicorn can be used to serve the web aplication for scalability, efficeincy and compatibility with web frameworks.
+# Nginx for reverse proxy to handle client requests, ssl termination, static files and forward dynamic requests to gunicorn.
